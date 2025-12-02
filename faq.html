@@ -298,6 +298,9 @@
                     <a class="sub-nav-link" href="products.html">Products</a>
                   </li>
                   <li class="sub-nav-item">
+                    <a class="sub-nav-link" href="products.html">Products</a>
+                  </li>
+                  <li class="sub-nav-item">
                     <a class="sub-nav-link" href="counter.html">Counter</a>
                   </li>
                   <li class="sub-nav-item">
@@ -306,20 +309,14 @@
                     >
                   </li>
                   <li class="sub-nav-item">
-                    <a class="sub-nav-link active" href="image-gallery.html"
-                      >Image Gallery</a
+                    <a class="sub-nav-link" href="our-partners.html"
+                      >Our Partners</a
                     >
                   </li>
                   <li class="sub-nav-item">
-                    <a class="sub-nav-link" href="video-gallery.html"
-                      >Video Gallery</a
-                    >
+                    <a class="sub-nav-link active" href="faq.html">Faq's</a>
                   </li>
-                  <li class="sub-nav-item">
-                    <a class="sub-nav-link" href="video-area.html"
-                      >Video Area</a
-                    >
-                  </li>
+
                   <li class="sub-nav-item">
                     <a class="sub-nav-link" href="testimonials.html"
                       >Testimonials</a
@@ -355,7 +352,7 @@
                     icon="solar:checklist-minimalistic-bold-duotone"
                   ></iconify-icon>
                 </span>
-                <span class="nav-text"> Booking List </span>
+                <span class="nav-text"> Service Enquiry List </span>
               </a>
             </li>
             <li class="nav-item">
@@ -365,7 +362,7 @@
                     icon="solar:users-group-two-rounded-bold-duotone"
                   ></iconify-icon>
                 </span>
-                <span class="nav-text"> Enquiry List </span>
+                <span class="nav-text">Contact Enquiry List </span>
               </a>
             </li>
             <li class="nav-item">
@@ -390,92 +387,6 @@
             </li>
 
             <li class="menu-title mt-2">Users</li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="profile.html">
-                <span class="nav-icon">
-                  <iconify-icon
-                    icon="solar:chat-square-like-bold-duotone"
-                  ></iconify-icon>
-                </span>
-                <span class="nav-text"> Profile </span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a
-                class="nav-link menu-arrow"
-                href="#sidebarInvoice"
-                data-bs-toggle="collapse"
-                role="button"
-                aria-expanded="false"
-                aria-controls="sidebarInvoice"
-              >
-                <span class="nav-icon">
-                  <iconify-icon
-                    icon="solar:bill-list-bold-duotone"
-                  ></iconify-icon>
-                </span>
-                <span class="nav-text"> Invoices </span>
-              </a>
-              <div class="collapse" id="sidebarInvoice">
-                <ul class="nav sub-navbar-nav">
-                  <li class="sub-nav-item">
-                    <a class="sub-nav-link" href="invoice-add.html">Create</a>
-                  </li>
-                  <li class="sub-nav-item">
-                    <a class="sub-nav-link" href="invoice-list.html">List</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="menu-title mt-2">Other Apps</li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="apps-calendar.html">
-                <span class="nav-icon">
-                  <iconify-icon
-                    icon="solar:calendar-bold-duotone"
-                  ></iconify-icon>
-                </span>
-                <span class="nav-text"> Calendar </span>
-              </a>
-            </li>
-
-            <li class="menu-title mt-2">Custom</li>
-
-            <li class="nav-item">
-              <a
-                class="nav-link menu-arrow"
-                href="#sidebarAuthentication"
-                data-bs-toggle="collapse"
-                role="button"
-                aria-expanded="false"
-                aria-controls="sidebarAuthentication"
-              >
-                <span class="nav-icon">
-                  <iconify-icon
-                    icon="solar:lock-keyhole-bold-duotone"
-                  ></iconify-icon>
-                </span>
-                <span class="nav-text"> Authentication </span>
-              </a>
-              <div class="collapse" id="sidebarAuthentication">
-                <ul class="nav sub-navbar-nav">
-                  <li class="sub-nav-item">
-                    <a class="sub-nav-link" href="auth-signin.html">Sign In</a>
-                  </li>
-                  <li class="sub-nav-item">
-                    <a class="sub-nav-link" href="auth-signup.html">Sign Up</a>
-                  </li>
-                  <li class="sub-nav-item">
-                    <a class="sub-nav-link" href="auth-password.html"
-                      >Reset Password</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </li>
           </ul>
         </div>
       </div>
@@ -490,18 +401,15 @@
                 <div
                   class="card-header d-flex justify-content-between align-items-center gap-1"
                 >
-                  <h4 class="card-title flex-grow-1">Image Gallery List</h4>
+                  <h4 class="card-title flex-grow-1">Faq's</h4>
 
-                  <a href="image-categories.html" class="btn btn-sm btn-info">
-                    Image Categories
-                  </a>
                   <a
                     href="#"
-                    data-bs-toggle="modal"
-                    data-bs-target="#addImage"
                     class="btn btn-sm btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#addService"
                   >
-                    Add Images
+                    + Add Faq's
                   </a>
                 </div>
                 <div>
@@ -524,10 +432,9 @@
                               ></label>
                             </div>
                           </th>
-                          <th>Image</th>
-                          <th>Title</th>
-                          <th>Sub-Title</th>
-                          <th>Image Category</th>
+
+                          <th>Question</th>
+                          <th>Answer</th>
                           <th>Status</th>
                           <th>Action</th>
                         </tr>
@@ -549,25 +456,11 @@
                           </td>
 
                           <td>
-                            <div class="" style="width: 80px; height: 80px">
-                              <img
-                                src="assets/images/logo.png"
-                                alt="icon"
-                                style="
-                                  width: 100%;
-                                  height: 100%;
-                                  object-fit: cover;
-                                "
-                              />
-                            </div>
+                            <p>Lorem ipsum dolor sit amet.</p>
                           </td>
-                          <td>Drone Services</td>
                           <td>
-                            <p class="text-truncate">
-                              Lorem ipsum dolor sit, amet ...
-                            </p>
+                            <p>Lorem ipsum dolor sit amet.</p>
                           </td>
-                          <td>Drone</td>
                           <td>
                             <div class="badge rounded-pill bg-success">
                               Active
@@ -580,7 +473,7 @@
                                 href="#"
                                 class="btn btn-soft-primary btn-sm"
                                 data-bs-toggle="modal"
-                                data-bs-target="#editImage"
+                                data-bs-target="#editService"
                                 ><iconify-icon
                                   icon="solar:pen-2-broken"
                                   class="align-middle fs-18"
@@ -657,7 +550,7 @@
     <!-- add modal -->
     <div
       class="modal fade"
-      id="addImage"
+      id="addService"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -665,7 +558,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Image</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Faq's</h1>
             <button
               type="button"
               class="btn-close"
@@ -676,25 +569,16 @@
           <div class="modal-body">
             <form>
               <div class="mb-3">
-                <label for="" class="col-form-label"> Image:</label>
-                <input type="file" class="form-control" id="" />
+                <label for="recipient-name" class="col-form-label"
+                  >Question</label
+                >
+                <input type="text" class="form-control" id="recipient-name" />
               </div>
               <div class="mb-3">
-                <label for="" class="col-form-label"> Title:</label>
-                <input type="text" class="form-control" id="" />
-              </div>
-              <div class="mb-3">
-                <label for="" class="col-form-label"> Sub Title:</label>
-                <input type="text" class="form-control" id="" />
-              </div>
-              <div class="mb-3">
-                <label for="" class="col-form-label"> Select Category:</label>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Select</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                <label for="recipient-name" class="col-form-label"
+                  >Answer</label
+                >
+                <input type="text" class="form-control" id="recipient-name" />
               </div>
 
               <div class="mb-3">
@@ -725,7 +609,7 @@
     <!-- edit modal -->
     <div
       class="modal fade"
-      id="editImage"
+      id="editService"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -733,7 +617,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Image</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Faq's</h1>
             <button
               type="button"
               class="btn-close"
@@ -744,25 +628,16 @@
           <div class="modal-body">
             <form>
               <div class="mb-3">
-                <label for="" class="col-form-label"> Image:</label>
-                <input type="file" class="form-control" id="" />
+                <label for="recipient-name" class="col-form-label"
+                  >Question</label
+                >
+                <input type="text" class="form-control" id="recipient-name" />
               </div>
               <div class="mb-3">
-                <label for="" class="col-form-label"> Title:</label>
-                <input type="text" class="form-control" id="" />
-              </div>
-              <div class="mb-3">
-                <label for="" class="col-form-label"> Sub Title:</label>
-                <input type="text" class="form-control" id="" />
-              </div>
-              <div class="mb-3">
-                <label for="" class="col-form-label"> Select Category:</label>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Select</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                <label for="recipient-name" class="col-form-label"
+                  >Answer</label
+                >
+                <input type="text" class="form-control" id="recipient-name" />
               </div>
 
               <div class="mb-3">
