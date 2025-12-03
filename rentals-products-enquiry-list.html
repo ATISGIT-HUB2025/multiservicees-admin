@@ -302,7 +302,6 @@
                       >Rentals Products</a
                     >
                   </li>
-
                   <li class="sub-nav-item">
                     <a class="sub-nav-link" href="counter.html">Counter</a>
                   </li>
@@ -349,23 +348,26 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="rental-product-enquiry.html">
-                <span class="nav-icon">
-                  <iconify-icon
-                    icon="solar:checklist-minimalistic-bold-duotone"
-                  ></iconify-icon>
-                </span>
-                <span class="nav-text"> Rental Products Enquiry </span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="booking-list.html">
+              <a class="nav-link" href="booking-list.html">
                 <span class="nav-icon">
                   <iconify-icon
                     icon="solar:checklist-minimalistic-bold-duotone"
                   ></iconify-icon>
                 </span>
                 <span class="nav-text"> Service Enquiry List </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="rentals-products-enquiry-list.html"
+              >
+                <span class="nav-icon">
+                  <iconify-icon
+                    icon="solar:checklist-minimalistic-bold-duotone"
+                  ></iconify-icon>
+                </span>
+                <span class="nav-text"> Rentals Product Enquiry </span>
               </a>
             </li>
             <li class="nav-item">
@@ -424,7 +426,7 @@
                 <div
                   class="card-header d-flex justify-content-between align-items-center gap-1"
                 >
-                  <h4 class="card-title flex-grow-1">Service Enquiry List</h4>
+                  <h4 class="card-title flex-grow-1">Rentals Enquiry List</h4>
                 </div>
                 <div>
                   <div class="table-responsive">
@@ -438,22 +440,38 @@
                               <input
                                 type="checkbox"
                                 class="form-check-input"
-                                id="customCheck1"
+                                id="checkAll"
                               />
                               <label
                                 class="form-check-label"
-                                for="customCheck1"
+                                for="checkAll"
                               ></label>
                             </div>
                           </th>
-                          <th style="text-wrap: nowrap">Full Name</th>
-                          <th style="text-wrap: nowrap">Email</th>
-                          <th style="text-wrap: nowrap">Phone No.</th>
-                          <th style="text-wrap: nowrap">WhatsApp Number</th>
-                          <th style="text-wrap: nowrap">Company</th>
-                          <th style="text-wrap: nowrap">Action</th>
+
+                          <th>Full Name</th>
+                          <th>Email</th>
+                          <th>Phone</th>
+                          <th>Alt. Phone</th>
+                          <th>Company</th>
+                          <th>Product Category</th>
+                          <th>Product Model</th>
+                          <th>Quantity</th>
+                          <th>Purpose</th>
+                          <th>Start Date</th>
+                          <th>End Date</th>
+                          <th>Budget</th>
+                          <th>Delivery Type</th>
+                          <th>City</th>
+                          <th>Pincode</th>
+                          <th>Address</th>
+                          <th>Accessories</th>
+                          <th>ID Proof</th>
+                          <th>Message</th>
+                          <th>Action</th>
                         </tr>
                       </thead>
+
                       <tbody>
                         <tr>
                           <td>
@@ -461,39 +479,53 @@
                               <input
                                 type="checkbox"
                                 class="form-check-input"
-                                id="customCheck2"
+                                id="rowCheck1"
                               />
                               <label
                                 class="form-check-label"
-                                for="customCheck2"
+                                for="rowCheck1"
                               ></label>
                             </div>
                           </td>
 
-                          <td style="text-wrap: nowrap">suraj jamdade</td>
-                          <td style="text-wrap: nowrap">suraj@gmail.com</td>
-                          <td style="text-wrap: nowrap">+91 9090909090</td>
-                          <td style="text-wrap: nowrap">+91 9090909090</td>
-                          <td style="text-wrap: nowrap">Flymore</td>
+                          <td>Suraj Jamdade</td>
+                          <td>suraj@gmail.com</td>
+                          <td>+91 9090909090</td>
+                          <td>+91 8080808080</td>
+                          <td>XYZ Pvt Ltd</td>
+
+                          <td>Drone</td>
+                          <td>DJI Mavic Pro</td>
+                          <td>2</td>
+                          <td>Event</td>
+
+                          <td>2025-01-10</td>
+                          <td>2025-01-12</td>
+
+                          <td>₹15,000</td>
+                          <td>Home Delivery</td>
+                          <td>Mumbai</td>
+                          <td>400001</td>
+
+                          <td>Address sample here</td>
+                          <td>Extra batteries, Memory Card</td>
+
+                          <td>
+                            <a href="#!" class="btn btn-sm btn-primary">
+                              View File
+                            </a>
+                          </td>
+
+                          <td>This is a message</td>
 
                           <td>
                             <div class="d-flex gap-2">
-                              <a
-                                href="#!"
-                                class="btn btn-soft-primary btn-sm"
-                                data-bs-toggle="modal"
-                                data-bs-target="#viewModal"
-                                ><iconify-icon
-                                  icon="solar:eye-broken"
-                                  class="align-middle fs-18"
-                                ></iconify-icon
-                              ></a>
-                              <a href="#!" class="btn btn-soft-danger btn-sm"
-                                ><iconify-icon
+                              <a href="#!" class="btn btn-soft-danger btn-sm">
+                                <iconify-icon
                                   icon="solar:trash-bin-minimalistic-2-broken"
                                   class="align-middle fs-18"
-                                ></iconify-icon
-                              ></a>
+                                ></iconify-icon>
+                              </a>
                             </div>
                           </td>
                         </tr>
@@ -556,10 +588,10 @@
     </div>
     <!-- END Wrapper -->
 
-    <!-- viewModal modal -->
+    <!-- add modal -->
     <div
       class="modal fade"
-      id="viewModal"
+      id="addImage"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -567,9 +599,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
-              View Details
-            </h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Video</h1>
             <button
               type="button"
               class="btn-close"
@@ -578,108 +608,83 @@
             ></button>
           </div>
           <div class="modal-body">
-            <div class="enquiry-details">
-              <table class="table table-bordered table-striped">
-                <tbody>
-                  <tr>
-                    <th>Full Name</th>
-                    <td id="v_full_name">Suraj jamdade</td>
-                  </tr>
-                  <tr>
-                    <th>Email</th>
-                    <td id="v_email"></td>
-                  </tr>
-                  <tr>
-                    <th>Phone</th>
-                    <td id="v_phone"></td>
-                  </tr>
-                  <tr>
-                    <th>WhatsApp</th>
-                    <td id="v_whatsapp"></td>
-                  </tr>
-                  <tr>
-                    <th>Company Name</th>
-                    <td id="v_company"></td>
-                  </tr>
-                  <tr>
-                    <th>Country</th>
-                    <td id="v_country"></td>
-                  </tr>
-                  <tr>
-                    <th>State</th>
-                    <td id="v_state"></td>
-                  </tr>
-                  <tr>
-                    <th>District</th>
-                    <td id="v_district"></td>
-                  </tr>
-                  <tr>
-                    <th>City</th>
-                    <td id="v_city"></td>
-                  </tr>
-                  <tr>
-                    <th>Village / Area</th>
-                    <td id="v_village"></td>
-                  </tr>
-                  <tr>
-                    <th>Pin Code</th>
-                    <td id="v_pincode"></td>
-                  </tr>
-                  <tr>
-                    <th>Main Service</th>
-                    <td id="v_main_service"></td>
-                  </tr>
-                  <tr>
-                    <th>Sub Service</th>
-                    <td id="v_sub_service"></td>
-                  </tr>
-                  <tr>
-                    <th>Service Needed For</th>
-                    <td id="v_service_for"></td>
-                  </tr>
-                  <tr>
-                    <th>Quantity Required</th>
-                    <td id="v_quantity"></td>
-                  </tr>
-                  <tr>
-                    <th>Service Frequency</th>
-                    <td id="v_service_frequency"></td>
-                  </tr>
-                  <tr>
-                    <th>Service Location</th>
-                    <td id="v_service_location"></td>
-                  </tr>
-                  <tr>
-                    <th>Expected Start Date</th>
-                    <td id="v_start_date"></td>
-                  </tr>
-                  <tr>
-                    <th>Budget Range</th>
-                    <td id="v_budget"></td>
-                  </tr>
-                  <tr>
-                    <th>How Did You Hear About Us</th>
-                    <td id="v_hear"></td>
-                  </tr>
-                  <tr>
-                    <th>Preferred Contact Method</th>
-                    <td id="v_contact_method"></td>
-                  </tr>
-                  <tr>
-                    <th>Best Time To Contact</th>
-                    <td id="v_best_time"></td>
-                  </tr>
-                  <tr>
-                    <th>Message</th>
-                    <td id="v_message"></td>
-                  </tr>
-                  <tr>
-                    <th>Uploaded File</th>
-                    <td id="v_file"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+            <form>
+              <div class="mb-3">
+                <label for="" class="col-form-label"> Video:</label>
+                <input type="url" class="form-control" id="" />
+              </div>
+
+              <div class="mb-3">
+                <label for="" class="col-form-label">Status:</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Active</option>
+                  <option value="1">Inactive</option>
+                </select>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  <i class="bx bx-save"></i> Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- edit modal -->
+    <div
+      class="modal fade"
+      id="editImage"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Video</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="" class="col-form-label"> Video:</label>
+                <input type="url" class="form-control" id="" />
+              </div>
+
+              <div class="mb-3">
+                <label for="" class="col-form-label">Status:</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Active</option>
+                  <option value="1">Inactive</option>
+                </select>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  <i class="bx bx-refresh"></i> Update
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
